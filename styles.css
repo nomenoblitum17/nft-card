@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif; 
+}
+
+body {
+    background: #0d192b;
+    max-width: 1440px;
+}
+.nft-card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background: #14253d;
+    justify-content: center;
+    padding: 18px;
+    border-radius: 15px;
+    margin: 10vh auto;
+}
+
+.main-images {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.main-images a {
+    width: 100%;
+    height: 100%;
+    background: #00fff788;
+    position: absolute;
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.main-images a:hover {
+    opacity: 1;
+}
+
+.main-images-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.main-images-1 {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 0px;
+}
+
+.titles h3 {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+.titles h3:hover {
+    color:#00fff7;
+    cursor: pointer;
+}
+
+.titles p {
+    margin: 10px 0px 0px 0px;
+    color: #8bacda;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.caracter {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #2f415b;
+}
+
+.ethereum, .time {
+    display: flex;
+}
+
+.ethereum p, .time p {
+    margin-left: 5px;
+}
+
+.ethereum img, .time img {
+    object-fit: cover;
+    transform: scale(0.8);
+}
+
+.ethereum p {
+    color: #00fff7;
+    font-weight: 600;
+}
+
+.time p {
+    color: #8bacda;
+    font-size: 300;
+}
+
+.author {
+    display: flex;
+    height: 30px;
+    justify-items: flex-start;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.author p {
+    margin: 0px 10px;
+    color: #8bacda;
+    font-weight: 300;
+}
+
+.author p a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: 400;
+}
+
+.author p a:hover {
+    color:#00fff7;
+}
+
+.author img {
+    object-fit: contain;
+    width: 24px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
